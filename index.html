@@ -32,31 +32,48 @@
 
                 <!-- At large+ screens takes up half width (9/12) -->
                 <div class="col-lg-9">
+                    <h1> Javascript Code Quiz</h1>
+
+                    <!--make subrow with (1,3,1,3,1)columns and two buttons for timer and score -->
+
+
                     <!--make IDs #countDown and #scoreIncrement-->
-                    <!--make subrow with three columns and two buttons for timer and score -->
 
                     <!--back to one column-->
-                    <!-- bootstrap container -->
-                    <div class="jumbotron">
+                    <div class="col-lg-9">
 
-                        <!--make ID#jumboContain-->
-                        <h3 class="display-3">Javascript Code Quiz</h3>
+                        <!-- bootstrap container jumbotron that will be hidden and replaced with cards with questions during Quiz-->
+                        <div class="jumbotron">
 
-                        <p class="lead">You have five minutes to answer ten questions but you'll lose ten seconds if you
-                            get one wrong!</p>
-                        <hr class="my-4">
-                        <p>Click the button if you dare.</p>
-                        <p class="lead">
-                            <a class="btn btn-primary btn-lg" href="#" role="button">Start</a>
-                        </p>
-                    </div>
+                            <!--make ID#jumboContain-->
 
-                    <!--button to access high scores?-->
+                            <p class="lead">You have five minutes to answer ten questions but you'll lose ten seconds if
+                                you
+                                get one wrong!</p>
+                            <hr class="my-4">
+                            <p>Click the button if you dare.</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Start</a>
+                            </p>
+                        </div>
+
+                        <!--show when jumbotron gone and use slideshow?-->
+                        <div class="quiz-container">
+                            <div id="quiz"></div>
+                          </div>
+                          <button id="previous">Previous Question</button>
+                          <button id="next">Next Question</button>
+                          <button id="submit">Submit Quiz</button>
+                          <div id="results"></div>
+
+                    
+
+                        <!--button to access high scores?-->
 
         </main>
     </div>
 
-    <!--Osmond Ong's sticky footer - thanks OO-->
+    <!-- sticky footer - thanks OO-->
     <footer id="sticky-footer" class="py-2 bg-dark text-white-100">
         <div class="container text-center">
             <small style="color:white">Copyright The Libster 2020</small>
