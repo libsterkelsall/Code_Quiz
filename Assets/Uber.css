@@ -1,20 +1,45 @@
-/*adjust nav bar width and put extra contents here if you want */
-nav {
-    height: 20px;
-    /*padding-bottom: 20px;*/
-
-}
 
 /*add background image or color*/
 main {
-    /*background-image: url("butterfly-2049567_640.jpg");*/
     background-color: lightblue;
     height: 1000px;
     background-position: center;
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
-jumbotron {
-    padding: 2rem 4rem;
-}
+/* set attributes for constant header */
+.constantHeading {
+    display: inline-block;
+    height: 200px; 
+    width: 1000px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border: 5px solid rgb(48, 48, 73);
+    border-radius: 20px;
+  }
+
+  /* set attributes for watch boxes */
+  .watchBox {
+    display: inline-block; 
+    height: 100px;
+    width: 400px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgb(48, 48, 73);
+    border-radius: 20px;
+  }  
+
+  /* attributes for the quiz box */
+  .quizBox {
+    display: inline-block;
+    height: 500px; 
+    width: 1000px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border: 5px solid rgb(48, 48, 73);
+    border-radius: 20px;
+  }
+ 
