@@ -1,0 +1,150 @@
+<!-- Bootstrap-Powered HTML -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LK Javascript Quiz</title>
+
+    <!-- We link our html to the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- my UBER CSS -->
+    <link rel="stylesheet" href="/Assets/Uber.css">
+
+</head>
+
+<body>
+
+    <!-- Container Div -->
+    <div class="container">
+
+        <!-- Section 1: Show-off Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- Our brand / logo -->
+            <a class="navbar-brand" href="#">The Libster Lifestyle</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible button -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- The links of our navbar to include High Scores-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">High Scores <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suggestions</a>
+                    </li>
+
+                    <!-- a Dropdown menu -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Other Games
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Rock Paper Scissor</a>
+                            <a class="dropdown-item" href="#">Captain Planet</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Jumbotron element -->
+        <div class="jumbotron" style="padding-top:10px; padding-bottom: 10px;">
+        </div>
+        <!-- centered text -->
+        <h1 class="text-center"><strong>Javascript Quiz</strong></h1>
+        <h3 class="text-center">Can you beat the clock?</h3>
+        <h4 class="text-center">lose 10 seconds if you are wrong</h4>
+        <h6 class="text-center">if I can code it!</h6>
+
+        <!-- button with predefined style rules -->
+        <a class="btn btn-primary btn-lg" role="button">
+            <span id="countDown"></span>
+            <div id="container" style="width:300px; text-align: center;">
+                <div id="inputArea">
+
+                    <h3 id="counter" style="font-size:3em;">10:00</h3>
+                </div>
+            </div>
+        </a>
+        </p>
+    </div>
+
+    <!-- a Bootstrap row with columns -->
+    <div class="row">
+
+        <!-- At large+ screens takes up two-thirds width (9/12) -->
+        <div class="col-lg-9">
+            <!--Quiz Box constant-->
+            <div class="container" id="quizBox" style="border-color: mediumblue; border: 10px; border-radius: 1cm;">
+                <!--Introduction card that will disappear when start clicked and quiz cards begin-->
+                <div class="quiz-container" id="quiz">
+                    <span class=></span>
+                    <br>
+                    <h4>You have five minutes to answer ten questions but you'll lose ten seconds if you get one wrong!
+                    </h4>
+                    <br>
+                    <h2>Click the button if you dare.</h2>
+
+                    <button id="commenceQuiz">   START   </button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button id="previous">Previous Question</button>
+                    <button id="next">Next Question</button>
+                    <button id="submit">Submit Quiz</button>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- At large+ screens takes up one-third width (3/12) -->
+        <div class="col-lg-3">
+            <!--Box for Current Score-->
+            <div class="container" id="scoreBox" style>
+                <span class="border border-primary"></span>
+                <h2>Score</h2>
+                <p id="currentScore"></p>
+                <div id="results"></div>
+
+            </div>
+
+            <!--Constant div with access to high scores table-->
+            <div class="highScoresInfo">
+                <button id="previous"> HIGH SCORES </button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="/Assets/script.js"></script>
+
+</body>
+
+</html>

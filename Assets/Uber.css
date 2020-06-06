@@ -1,45 +1,18 @@
-
-/*add background image or color*/
-main {
-    background-color: lightblue;
-    height: 1000px;
-    background-position: center;
-    background-size: cover;
-    padding-top: 10px;
-}
-
-/* set attributes for constant header */
-.constantHeading {
-    display: inline-block;
-    height: 200px; 
-    width: 1000px;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 50px;
-    border: 5px solid rgb(48, 48, 73);
-    border-radius: 20px;
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
   }
-
-  /* set attributes for watch boxes */
-  .watchBox {
-    display: inline-block; 
-    height: 100px;
-    width: 400px;
-    text-align: center;
-    padding: 5px;
-    border: 1px solid rgb(48, 48, 73);
-    border-radius: 20px;
-  }  
-
-  /* attributes for the quiz box */
-  .quizBox {
-    display: inline-block;
-    height: 500px; 
-    width: 1000px;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 50px;
-    border: 5px solid rgb(48, 48, 73);
-    border-radius: 20px;
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
   }
- 
+  .quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+  }
